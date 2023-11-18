@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif; /* Ganti 'Calibri' dengan jenis font yang Anda inginkan */
+}
+
+h2 {
+    font-weight: bold;
+}
+
+a.navbar-brand {
+    font-weight: bold;
+    color: black; /* Atau warna lain sesuai keinginan Anda */
+}
+
+/* Warna default untuk tautan */
+a.nav-link {
+    font-weight: bold;
+    color: black; /* Atau warna lain sesuai keinginan Anda */
+}
+
+/* Warna ketika tautan aktif */
+a.nav-link.active {
+    color: red !important; /* Warna merah ketika tautan aktif */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: white; /* Warna teks */
+    text-align: justify;
+    width: 200px; /* Set the width to a fixed value */
+    height: 200px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.photobanner {
+	position: relative;
+	height: 150px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 100%;
+}
+
+.photobanner img {
+  margin: 0px 10px;
+}
+
+.photobanner {
+  animation: bannermove 15s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: -550px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+
+.btn.btn-full{
+  width: 100%;
+}
+
+.btn.btn-sm {
+    color: white; /* Warna teks tombol */
+}
+
+.btn.btn-sm:hover {
+    color:  white;/* Warna teks saat dihover */;
+}
+
+.btn.btn-danger{
+  background-color: red;
+}
+
+.input-icon{
+  position: absolute;
+  left: 3px;
+  top: calc(50% - 0.5em); /* Keep icon in center of input, regardless of the input height */
+}
+.input-field {
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  color: #000000;
+  position: relative;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
